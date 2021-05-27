@@ -12,9 +12,8 @@ spring:
     hibernate:
       dialect: org.hibernate.dialect.PostgreSQLDialect
       ddl-auto: update
-
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 ---
-
 spring:
   config:
     activate:
@@ -29,3 +28,4 @@ spring:
     hibernate:
       dialect: org.hibernate.dialect.PostgreSQLDialect
       ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
