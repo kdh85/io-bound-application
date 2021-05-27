@@ -1,9 +1,9 @@
 spring:
   config:
     activate:
-      on-profile: "dev"
+      on-profile: "local"
   datasource:
-    url: jdbc:postgresql://10.178.0.13:5432/postgresql?autoReconnect=true
+    url: jdbc:postgresql://localhost:5432/postgresql?autoReconnect=true
     username: postgresql
     password: postgrespassword
     driver-class-name: org.postgresql.Driver
@@ -12,15 +12,18 @@ spring:
     hibernate:
       dialect: org.hibernate.dialect.PostgreSQLDialect
       ddl-auto: update
+
 ---
+
 spring:
   config:
     activate:
-      on-profile: "local"
+      on-profile: "dev"
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgresql?autoReconnect=true
+    url: jdbc:postgresql://10.178.0.13:5432/postgresql?autoReconnect=true
     username: postgresql
     password: postgrespassword
+    driver-class-name: org.postgresql.Driver
   jpa:
     show-sql: true
     hibernate:
