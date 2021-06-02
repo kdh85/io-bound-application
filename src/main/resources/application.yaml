@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://10.178.0.13:5432/postgresql?autoReconnect=true
+    url: jdbc:postgresql://10.178.0.13:5432/postgresql
     username: postgresql
     password: postgrespassword
     driver-class-name: org.postgresql.Driver
