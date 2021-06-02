@@ -1,7 +1,5 @@
 spring:
-  config:
-    activate:
-      on-profile: "local"
+  profiles: local
   datasource:
     url: jdbc:postgresql://localhost:5432/postgresql?autoReconnect=true
     username: postgresql
@@ -16,9 +14,7 @@ spring:
 ---
 
 spring:
-  config:
-    activate:
-      on-profile: "dev"
+  profiles: dev
   datasource:
     url: jdbc:postgresql://10.178.0.13:5432/postgresql?autoReconnect=true
     username: postgresql
